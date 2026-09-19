@@ -1,4 +1,5 @@
-![Header](images\header.png)
+![Header](images/header.png)
+
 # Payment Service API
 
 A Spring Boot–based microservice for managing accounts and processing payments.  
