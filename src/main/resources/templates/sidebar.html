@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="sidebar">
+    <div class="sidebar">
+        <div class="sidebar-title">Payment Service</div>
+        <div class="sidebar-nav">
+            <a href="/dashboard" class="sidebar-link">Dashboard</a>
+            <a href="/accounts" class="sidebar-link">Accounts</a>
+            <a href="/transactions" class="sidebar-link">Transactions</a>
+            <a href="/payments" class="sidebar-link">Payments</a>
+            <a href="/profile" class="sidebar-link">Profile</a>
+            <form th:action="@{/logout}" method="post">
+                <button type="submit" class="logout-btn">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

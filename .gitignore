@@ -1,0 +1,36 @@
+# Build and IDE artifacts
+target/
+*.class
+*.jar
+*.war
+*.iml
+*.log
+*.tmp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment and configuration
+.env
+application.properties
+application.yml
+
+# Postman collections and local testing data
+payment-service.postman_collection.json
+
+# Database and credentials
+*.db
+*.sql
+*.sqlite
+
+# Node or frontend builds (if present)
+node_modules/
+dist/
+build/
+
+# Miscellaneous
+*.bak
+*.swp

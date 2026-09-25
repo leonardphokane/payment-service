@@ -1,0 +1,189 @@
+/* Dashboard wrapper */
+.dashboard {
+  flex: 1;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f 0%, #000 100%);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 220px; /* sidebar offset */
+  padding-top: 60px;  /* navbar offset */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: rgba(10, 10, 20, 0.95);
+  border-right: 2px solid #0ff;
+  padding: 20px;
+  box-shadow: 0 0 20px #0ff;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-title {
+  color: #0ff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #0ff;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.sidebar-title:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 25px #0ff;
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-link {
+  color: #bbb;
+  text-decoration: none;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.sidebar-link:hover {
+  background: #111;
+  color: #0ff;
+  box-shadow: 0 0 15px #0ff;
+  transform: translateX(5px);
+}
+.sidebar-link.active {
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0 0 20px #0ff;
+}
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: #bbb;
+  text-align: left;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.logout-btn:hover {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Header Banner */
+.header-banner {
+  text-align: center;
+  padding: 20px;
+  color: #0ff;
+  text-shadow: 0 0 20px #0ff;
+  animation: pulseGlow 3s infinite alternate;
+}
+.header-banner h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.header-banner h1:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 30px #0ff;
+}
+.header-banner p {
+  font-size: 1.2rem;
+  color: #ccc;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.header-banner p:hover {
+  color: #0ff;
+  text-shadow: 0 0 20px #0ff;
+}
+
+/* Flashcards grid */
+.flashcards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease forwards;
+  justify-items: center;
+}
+.card {
+  background: rgba(20, 20, 40, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 20px #0ff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 40px #0ff;
+  border-color: #0ff;
+  color: #0ff;
+}
+.accounts-card { border-color: #00ffff; box-shadow: 0 0 20px #00ffff; }
+.transactions-card { border-color: #ff00ff; box-shadow: 0 0 20px #ff00ff; }
+.payments-card { border-color: #39ff14; box-shadow: 0 0 20px #39ff14; }
+.diagnostics-card { border-color: #ff6600; box-shadow: 0 0 20px #ff6600; }
+
+/* Engineering Section */
+.engineering-image {
+  margin-top: 40px;
+  text-align: center;
+  color: #0ff;
+  text-shadow: 0 0 20px #0ff;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+/* Footer Banner */
+.footer-banner {
+  background: linear-gradient(135deg, #000 0%, #0a0a0f 100%);
+  color: #0ff;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #0ff;
+  text-shadow: 0 0 15px #0ff;
+  animation: pulseGlow 3s infinite alternate;
+}
+.footer-banner p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.footer-banner p:hover {
+  color: #0ff;
+  text-shadow: 0 0 20px #0ff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseGlow {
+  from { text-shadow: 0 0 15px #0ff; }
+  to { text-shadow: 0 0 30px #0ff; }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/dashboard.css"/>
+</head>
+<body class="neon-bg">
+<div class="container mt-5">
+    <h1 class="text-center text-neon">Profile</h1>
+    <div class="card neon-card mx-auto" style="max-width: 400px;" th:if="${profile != null}">
+        <div class="card-body">
+            <h2 th:text="${profile.name}" class="text-neon"></h2>
+            <p>Email: <span th:text="${profile.email}"></span></p>
+            <p>Role: <span th:text="${profile.role}"></span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

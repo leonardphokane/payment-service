@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Payment Service Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css"/>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div th:replace="sidebar :: sidebar"></div>
+
+    <!-- Dashboard Wrapper -->
+    <div class="dashboard">
+        <div class="main-content">
+            <!-- Neon Header Banner -->
+            <div class="header-banner">
+                <h1>PAYMENT SERVICE DASHBOARD</h1>
+                <p>Secure Transactions • Neon UI • Spring Boot</p>
+            </div>
+
+            <!-- Flashcards -->
+            <div class="flashcards">
+                <div th:replace="flashcard :: card('Accounts','Manage customer accounts securely.','accounts-card')"></div>
+                <div th:replace="flashcard :: card('Transactions','View and audit all payment flows.','transactions-card')"></div>
+                <div th:replace="flashcard :: card('Payments','Transfer funds between accounts.','payments-card')"></div>
+                <div th:replace="flashcard :: card('Diagnostics','Monitor health and actuator info.','diagnostics-card')"></div>
+            </div>
+
+            <!-- Engineering Section -->
+            <div class="engineering-image">
+                <h1>PAYMENT SERVICE API</h1>
+                <p>End-to-end mastery — Secure API, database, and interface.</p>
+            </div>
+
+            <!-- Neon Footer Banner -->
+            <div class="footer-banner">
+                <p>&copy; 2026 Payment Service • Powered by Spring Boot • Neon UI</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

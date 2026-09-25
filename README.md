@@ -1,11 +1,13 @@
 ![Header](images/header.png)
 
-# Payment Service API
+# Payment Service App
 
 A Spring Boot–based microservice for managing accounts and processing payments.  
 This service provides full CRUD operations for accounts and transactions, along with health and diagnostics endpoints.
 
+
 ---
+
 
 ## 🚀 Features
 - **Payments**
@@ -27,6 +29,23 @@ This service provides full CRUD operations for accounts and transactions, along 
 
 ---
 
+| Dashboard Preview | Login Preview |
+|-------------------|---------------|
+| ![Dashboard](images/payment-ui.jpeg) <br> **Payment Service Dashboard** | ![Login](images/login.png) <br> **Login Page** |
+
+---
+
+# Screenshots
+
+| Accounts | Transactions |
+|----------|--------------|
+| ![Accounts](images/accounts.jpeg) <br> **Shows the three seeded accounts with balances and currencies.** | ![Transactions](images/transactions.jpeg) <br> **Displays the seeded transaction history (Transaction #1, Transaction #2).** |
+
+| Payments | Profile |
+|----------|---------|
+| ![Payments](images/payments.jpeg) <br> **Lists the seeded payments (Payment of 200.00 USD, Payment of 300.00 ZAR).** | ![Profile](images/profile.jpeg) <br> **Renders your developer profile (Leonard Phokane, email, role).** |
+
+---
 ## 📦 Tech Stack
 - **Java 17+**
 - **Spring Boot**
@@ -133,3 +152,10 @@ Implement JWT‑based authentication for stronger security
 ## 👨‍💻 Author
 Developed by Leonard Phokane
 Cloud‑Native & DevOps Engineer | Backend AI/ML Engineering Intern | Freelance Full‑Stack Developer
+
+---
+
+> "Our Deepest Fear Is Not That We Are Inadequate. Our Deepest Fear Is That We Are Powerful Beyond Measure"
+-Marianne Williamson
+
+![Footer](images/footer.png)

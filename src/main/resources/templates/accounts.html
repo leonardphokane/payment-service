@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Accounts</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/dashboard.css"/>
+</head>
+<body class="neon-bg">
+<div class="container mt-5">
+    <h1 class="text-center text-neon">Accounts</h1>
+    <div class="row">
+        <div class="col-md-4" th:each="account : ${accounts}">
+            <div class="card neon-card mb-4">
+                <div class="card-body">
+                    <h2 th:text="'Account #' + ${account.id}" class="text-neon"></h2>
+                    <p>Balance: <span th:text="${account.balance}"></span></p>
+                    <p>Currency: <span th:text="${account.currency}"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
