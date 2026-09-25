@@ -29,9 +29,11 @@ This service provides full CRUD operations for accounts and transactions, along 
 
 ---
 
+# Payment Service UI
+
 | Dashboard Preview | Login Preview |
 |-------------------|---------------|
-| ![Dashboard](images/payment-ui.jpeg) <br> **Payment Service Dashboard** | ![Login](images/login.png) <br> **Login Page** |
+| ![Dashboard](images/payment-ui.png) <br> **Payment Service Dashboard** | ![Login](images/login.png) <br> **Login Page** |
 
 ---
 
@@ -155,7 +157,6 @@ Cloud‑Native & DevOps Engineer | Backend AI/ML Engineering Intern | Freelance 
 
 ---
 
-> "Our Deepest Fear Is Not That We Are Inadequate. Our Deepest Fear Is That We Are Powerful Beyond Measure"
--Marianne Williamson
+> "Our Deepest Fear Is Not That We Are Inadequate. Our Deepest Fear Is That We Are Powerful Beyond Measure" - Marianne Williamson
 
 ![Footer](images/footer.png)
