@@ -45,7 +45,7 @@ This service provides full CRUD operations for accounts and transactions, along 
 
 | Payments | Profile |
 |----------|---------|
-| ![Payments](images/payments.jpeg) <br> **Lists the seeded payments (Payment of 200.00 USD, Payment of 300.00 ZAR).** | ![Profile](images/profile.jpeg) <br> **Renders your developer profile (Leonard Phokane, email, role).** |
+| ![Payments](images/payments.jpeg) <br> **Lists the seeded payments (Payment of 200.00 USD, Payment of 300.00 ZAR).** | ![Profile](images/profile.jpeg) <br> **Renders developer profile (Leonard Phokane, email, role).** |
 
 ---
 ## 📦 Tech Stack
